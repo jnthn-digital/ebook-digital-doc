@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pack Réussite 30 Jours - JNTHN Digital</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FFF8E7;--card:#fff;--ink:#1d1b3a;--mut:#5b587a;--or:#FF7A1A;--vi:#5B3FD9;--vt:#14A56A;--ro:#FF4D78;--ln:#ece6d3;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#14122b;--card:#1e1b3d;--ink:#f3f1ff;--mut:#b9b5de;--ln:#33305c}}
+:root[data-theme="dark"]{--bg:#14122b;--card:#1e1b3d;--ink:#f3f1ff;--mut:#b9b5de;--ln:#33305c}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Poppins',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.6;background-image:radial-gradient(color-mix(in srgb,var(--vi) 14%,transparent) 1.5px,transparent 1.5px);background-size:28px 28px}
+.w{max-width:960px;margin:0 auto;padding:0 18px}
+.hero{position:relative;overflow:hidden;color:#fff;text-align:center;padding:56px 0 70px;background:linear-gradient(135deg,var(--vi),#2a1a8f 55%,var(--ro))}
+.hero:before,.hero:after{content:"";position:absolute;border-radius:50%;background:var(--or);opacity:.4}
+.hero:before{width:320px;height:320px;right:-100px;top:-110px}
+.hero:after{width:200px;height:200px;left:-60px;bottom:-80px;background:#fff;opacity:.12}
+.hero .w{position:relative;z-index:1}
+.brand{display:inline-block;background:rgba(255,255,255,.18);padding:6px 16px;border-radius:99px;font-weight:600;font-size:.9rem}
+h1{font-size:clamp(1.9rem,6.4vw,3.3rem);line-height:1.12;margin:.5em 0 .3em;font-weight:800}
+h1 em{font-style:normal;color:#FFD84D}
+.sub{max-width:36em;margin:0 auto 1.4em;font-size:1.05rem;opacity:.95}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 26px;border-radius:99px;font:inherit;font-weight:700;text-decoration:none;border:0;cursor:pointer;color:#fff;background:#25D366;box-shadow:0 8px 20px rgba(37,211,102,.35);transition:transform .15s}
+.btn:hover{transform:translateY(-2px) scale(1.02)}
+.btn.alt{background:var(--or);box-shadow:0 8px 20px rgba(255,122,26,.35)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:22px}
+.chips span{background:rgba(255,255,255,.16);padding:5px 12px;border-radius:99px;font-size:.82rem}
+section{padding:46px 0}
+h2{font-size:clamp(1.5rem,4.6vw,2.1rem);text-align:center;margin:0 0 .3em;line-height:1.2}
+h2 span{color:var(--ro)}
+.lead{text-align:center;color:var(--mut);max-width:34em;margin:0 auto 26px}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}
+.card{background:var(--card);border-radius:18px;padding:20px;border:1px solid var(--ln);box-shadow:0 6px 18px rgba(40,30,110,.08)}
+.card .ic{font-size:1.9rem}
+.card h3{margin:.3em 0 .2em;font-size:1.05rem}
+.card p{margin:0;color:var(--mut);font-size:.93rem}
+.card:nth-child(1){border-top:5px solid var(--or)}.card:nth-child(2){border-top:5px solid var(--vt)}.card:nth-child(3){border-top:5px solid var(--vi)}.card:nth-child(4){border-top:5px solid var(--ro)}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:24px}
+.tabs button{font:inherit;font-weight:600;padding:10px 20px;border-radius:99px;border:2px solid var(--vi);background:var(--card);color:var(--vi);cursor:pointer}
+.tabs button[aria-pressed="true"]{background:var(--vi);color:#fff}
+.price{position:relative;display:flex;flex-direction:column;background:var(--card);border-radius:22px;padding:24px 20px;border:2px solid var(--ln)}
+.price.best{border-color:var(--or);transform:scale(1.03);box-shadow:0 14px 34px rgba(255,122,26,.25)}
+.tag{position:absolute;top:-13px;left:50%;transform:translateX(-50%);background:var(--or);color:#fff;font-size:.78rem;font-weight:700;padding:4px 14px;border-radius:99px;white-space:nowrap}
+.price h3{margin:0;font-size:1.2rem}
+.amt{font-size:2.3rem;font-weight:800;color:var(--vi);margin:.1em 0}
+.amt small{font-size:.9rem;font-weight:600;color:var(--mut)}
+.price ul{list-style:none;padding:0;margin:8px 0 18px;flex:1}
+.price li{padding:5px 0 5px 26px;position:relative;font-size:.92rem}
+.price li:before{content:"✔";position:absolute;left:0;color:var(--vt);font-weight:800}
+.price .btn{justify-content:center}
+.bonus{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.bonus div{display:flex;gap:12px;align-items:center;background:var(--card);border:1px dashed var(--or);border-radius:14px;padding:12px 14px;font-size:.93rem}
+.bonus b{background:var(--or);color:#fff;border-radius:10px;padding:2px 9px;font-size:.78rem;white-space:nowrap}
+.total{text-align:center;margin-top:18px;font-weight:600}
+.total s{color:var(--mut)} .total strong{color:var(--vt);font-size:1.3rem}
+.band{background:linear-gradient(120deg,var(--vt),#0b7a4d);color:#fff;border-radius:24px;padding:30px 22px;text-align:center}
+.band h2{color:#fff}.band p{max-width:34em;margin:.4em auto 0}
+details{background:var(--card);border:1px solid var(--ln);border-radius:14px;padding:4px 16px;margin:10px 0}
+summary{cursor:pointer;font-weight:600;padding:10px 0}
+details p{margin:0 0 12px;color:var(--mut)}
+.pay{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:12px}
+.pay span{background:var(--card);border:1px solid var(--ln);padding:6px 14px;border-radius:99px;font-size:.85rem;font-weight:600}
+.final{text-align:center}
+footer{text-align:center;color:var(--mut);font-size:.82rem;padding:0 18px 100px}
+.fab{position:fixed;right:16px;bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:30;padding:13px 20px}
+:focus-visible{outline:3px solid var(--or);outline-offset:3px}
+@media (max-width:640px){.price.best{transform:none}}
+
+.story{background:var(--card);border-radius:24px;padding:28px 24px;border-left:8px solid var(--or);box-shadow:0 8px 24px rgba(40,30,110,.1)}
+.story p{margin:.7em 0;font-size:1.04rem}
+.story .note{font-size:.8rem;color:var(--mut)}
+.story q{display:block;margin:1em 0;font-size:1.15rem;font-weight:600;color:var(--vi);quotes:none}
+.steps{counter-reset:s;display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.steps div{counter-increment:s;background:var(--card);border-radius:18px;padding:22px 18px 18px;border:1px solid var(--ln);position:relative}
+.steps div:before{content:counter(s);position:absolute;top:-16px;left:16px;width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,var(--or),var(--ro));color:#fff;font-weight:800;display:grid;place-items:center}
+.steps h3{margin:.4em 0 .2em;font-size:1.05rem}.steps p{margin:0;color:var(--mut);font-size:.93rem}
+.demo{background:var(--card);border-radius:20px;padding:22px;border:2px dashed var(--vi)}
+.demo .q{font-size:1.1rem;font-weight:600}
+.facts{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));margin-top:20px;text-align:center}
+.facts div{background:linear-gradient(135deg,var(--vi),var(--ro));color:#fff;border-radius:16px;padding:16px 8px}
+.facts b{display:block;font-size:1.9rem;line-height:1.1}
+.facts span{font-size:.82rem}
+.testi{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-top:20px}
+.testi blockquote{margin:0;background:var(--card);border-radius:16px;padding:16px;border-left:5px solid var(--vt)}
+.testi cite{display:block;margin-top:8px;font-size:.85rem;color:var(--mut);font-style:normal}
+.cost{background:color-mix(in srgb,var(--ro) 12%,var(--card));border-radius:18px;padding:18px 20px;margin-top:18px;text-align:center;font-weight:600}
+</style></head><body>
+
+<header class="hero"><div class="w">
+<span class="brand">📚 JNTHN Digital</span>
+<h1>Ton examen approche. Et si tu savais <em>exactement quoi faire</em> chaque jour ?</h1>
+<p class="sub">Un plan de 30 jours, des exercices corrigés pas à pas et un suivi WhatsApp, pour le CEPE, le BEPC, le BAC et le BTS. Pour le prix d'une heure de répétiteur.</p>
+<a class="btn" data-wa="Bonjour JNTHN Digital, je veux recevoir l'extrait gratuit du guide." href="#">💬 Recevoir l'extrait gratuit</a>
+<div class="chips"><span>🇨🇮 Côte d'Ivoire</span><span>🇸🇳 Sénégal</span><span>🇧🇯 Bénin</span><span>🇧🇫 Burkina</span><span>🇲🇱 Mali</span><span>🇹🇬 Togo</span><span>🇳🇪 Niger</span></div>
+</div></header>
+
+<section><div class="w">
+<h2>L'histoire d'<span>Awa</span></h2>
+<p class="lead">Une histoire que beaucoup d'élèves reconnaîtront.</p>
+<div class="story">
+<p>Awa est en Terminale. À deux mois du BAC, ses cahiers sont pleins, mais elle ne sait pas par où commencer.</p>
+<p>Un jour elle révise la philo, le lendemain les maths, sans ordre. Le soir, elle se couche avec la même question : <strong>« Est-ce que j'en fais assez ? »</strong></p>
+<p>Le répétiteur coûte cher et ses parents ne peuvent pas payer chaque semaine. Alors elle se débrouille seule, et la peur grandit.</p>
+<q>Le problème d'Awa n'est pas son intelligence. C'est qu'elle n'a pas de plan.</q>
+<p>Quand elle reçoit un plan de 30 jours, tout change : chaque soir, une tâche claire, un exercice, une correction. Elle ne se demande plus quoi faire, elle le fait. À dix jours de l'examen, elle passe un sujet complet chronométré et comprend enfin d'où viennent ses pertes de points.</p>
+<p>Elle ne sait pas si elle sera première. Mais elle entre dans la salle d'examen <strong>préparée</strong>, pas paniquée.</p>
+<p class="note">Histoire fictive, inspirée de situations vécues par beaucoup d'élèves.</p>
+</div></div></section>
+
+<section><div class="w">
+<h2>Ce qui fait perdre des points <span>sans que tu le saches</span></h2>
+<p class="lead">Réviser dur ne suffit pas. Réviser sans méthode, si.</p>
+<div class="grid">
+<div class="card"><div class="ic">🌀</div><h3>Réviser dans le désordre</h3><p>Sans plan, on travaille ce qu'on aime et on évite le reste.</p></div>
+<div class="card"><div class="ic">🎯</div><h3>Ignorer les coefficients</h3><p>Une matière à fort coefficient mal préparée coûte très cher.</p></div>
+<div class="card"><div class="ic">✍️</div><h3>Perdre des points bêtes</h3><p>Unité oubliée, justification absente, copie illisible.</p></div>
+<div class="card"><div class="ic">🙋</div><h3>Personne pour corriger</h3><p>Sans correction, on refait les mêmes erreurs.</p></div>
+</div>
+<div class="cost">Chaque semaine perdue à réviser sans plan, c'est une semaine de moins pour corriger tes erreurs.</div>
+</div></section>
+
+<section><div class="w">
+<h2>La solution : un <span>plan simple</span> en 3 étapes</h2>
+<p class="lead">Pas de théorie inutile. Juste ce qu'il faut faire, dans l'ordre.</p>
+<div class="steps">
+<div><h3>Suis le plan de 30 jours</h3><p>Chaque jour : 1 h à 1 h 30, une tâche précise. Plus de « par quoi je commence ? ».</p></div>
+<div><h3>Pratique avec des corrections</h3><p>Exercices types et sujets blancs. Tu cherches d'abord, tu vérifies ensuite, étape par étape.</p></div>
+<div><h3>Reste suivi sur WhatsApp</h3><p>Un exercice par jour et tes questions posées dans le groupe. Tu n'es plus seul(e).</p></div>
+</div></div></section>
+
+<section><div class="w">
+<h2>Vois la méthode <span>par toi-même</span></h2>
+<p class="lead">Un exemple tiré du guide BEPC. Essaie avant de regarder la correction.</p>
+<div class="demo">
+<p class="q">Résous : 2(x − 3) = x + 4</p>
+<details><summary>👁 Voir la correction pas à pas</summary>
+<p>1) Développer : 2x − 6 = x + 4<br>2) Regrouper les x : 2x − x = 4 + 6<br>3) Conclure : <strong>x = 10</strong><br>4) Vérifier : 2 × 7 = 14 et 10 + 4 = 14 ✓</p></details>
+</div>
+<div class="facts">
+<div><b>4</b><span>niveaux : CEPE, BEPC, BAC, BTS</span></div>
+<div><b>7</b><span>pays d'Afrique de l'Ouest</span></div>
+<div><b>30</b><span>jours de plan structuré</span></div>
+<div><b>7</b><span>jours pour être remboursé</span></div>
+</div>
+<div class="testi" id="testi"></div>
+</div></section>
+
+<section id="prix"><div class="w">
+<h2>Ton offre : choisis ton <span>examen</span> et ton pack</h2>
+<p class="lead">Les prix s'adaptent à ton niveau. Paiement par Mobile Money.</p>
+<div class="tabs" id="tabs" role="group" aria-label="Niveau">
+<button data-l="CEPE" aria-pressed="false">CEPE</button><button data-l="BEPC" aria-pressed="false">BEPC</button><button data-l="BAC" aria-pressed="true">BAC</button><button data-l="BTS" aria-pressed="false">BTS</button>
+</div>
+<div class="grid" id="plans">
+<div class="price"><h3>Essentiel</h3><div class="amt"><span data-p="0"></span> <small>FCFA</small></div>
+<ul><li>Guide complet (version interactive + PDF)</li><li>Planning imprimable de 30 jours</li><li>Checklist du jour J</li></ul>
+<a class="btn alt" data-wa data-t="Essentiel" href="#">Je choisis Essentiel</a></div>
+<div class="price best"><span class="tag">⭐ Le plus choisi</span><h3>Réussite</h3><div class="amt"><span data-p="1"></span> <small>FCFA</small></div>
+<ul><li>Tout l'Essentiel</li><li>Fiche formules et règles à connaître</li><li>2 sujets blancs corrigés</li><li>Guide pour les parents</li><li>Groupe WhatsApp de suivi</li></ul>
+<a class="btn" data-wa data-t="Réussite" href="#">Je choisis Réussite</a></div>
+<div class="price"><h3>Premium</h3><div class="amt"><span data-p="2"></span> <small>FCFA</small></div>
+<ul><li>Tout le pack Réussite</li><li>1 correction personnalisée de ton devoir ou plan</li><li>1 séance de questions en direct</li></ul>
+<a class="btn alt" data-wa data-t="Premium" href="#">Je choisis Premium</a></div>
+</div>
+<div class="pay"><span>🟠 Orange Money</span><span>🟡 MTN MoMo</span><span>🔵 Wave</span><span>🟣 Moov</span></div>
+</div></section>
+
+<section><div class="w">
+<h2>🎁 Les bonus du <span>Pack Réussite</span></h2>
+<p class="lead">Tout est inclus, sans supplément.</p>
+<div class="bonus">
+<div><b>1 000 F</b>Planning imprimable de 30 jours</div>
+<div><b>1 500 F</b>Fiche formules et règles à connaître par cœur</div>
+<div><b>2 000 F</b>2 sujets blancs corrigés</div>
+<div><b>500 F</b>Checklist de la veille et du jour J</div>
+<div><b>1 000 F</b>Guide parents : aider sans stresser</div>
+<div><b>3 000 F</b>Groupe WhatsApp : exercice du jour et questions</div>
+</div>
+<p class="total">Valeur totale avec le guide : <s>13 000 FCFA</s> → à partir de <strong>6 900 FCFA</strong> (prix BAC)</p>
+</div></section>
+
+<section><div class="w"><div class="band">
+<h2>🛡️ Satisfait ou remboursé 7 jours</h2>
+<p>Essaie le guide. S'il ne te convient pas, écris-nous dans les 7 jours et nous te remboursons, sans question.</p>
+</div></div></section>
+
+<section><div class="w">
+<h2>Questions <span>fréquentes</span></h2>
+<details><summary>Comment je reçois le guide ?</summary><p>Après ton paiement Mobile Money, tu nous envoies la capture sur WhatsApp et tu reçois le guide tout de suite.</p></details>
+<details><summary>Le guide garantit-il la réussite ?</summary><p>Aucun guide ne peut le garantir. Notre promesse : un plan clair, de la méthode et des exercices corrigés. Ton travail régulier fait la différence.</p></details>
+<details><summary>Est-ce adapté à mon pays ?</summary><p>Le guide couvre l'Afrique de l'Ouest francophone. Les coefficients indicatifs sont rappelés, à confirmer auprès de ton établissement.</p></details>
+<details><summary>Faut-il beaucoup de data ?</summary><p>Non. Les fichiers sont légers et le guide peut s'utiliser hors connexion après téléchargement.</p></details>
+<details><summary>Je suis parent, comment l'utiliser ?</summary><p>Le pack Réussite contient un guide pour vous : poser le cadre, encourager, sans pression.</p></details>
+</div></section>
+
+<section class="final"><div class="w">
+<h2>Ton plan commence <span>aujourd'hui</span></h2>
+<p class="lead">Chaque jour sans plan est un jour de perdu. Écris-nous sur WhatsApp, reçois l'extrait gratuit et commence dès ce soir.</p>
+<a class="btn" data-wa="Bonjour JNTHN Digital, je veux en savoir plus sur le Pack Réussite 30 Jours." href="#">💬 Parler sur WhatsApp</a>
+</div></section>
+
+<footer>© JNTHN Digital. Reproduction interdite. Nos guides ne garantissent pas de résultat.</footer>
+<a class="btn fab" data-wa="Bonjour JNTHN Digital, j'ai une question." href="#" aria-label="WhatsApp">💬 WhatsApp</a>
+
+<script>
+const WA_NUMBER="2250595233955"; // remplace par ton numéro, format international sans + ni espaces
+const PRICES={CEPE:[1900,3900,7900],BEPC:[2900,5900,9900],BAC:[3900,6900,12900],BTS:[5900,9900,15900]};
+let level="BAC";
+const fmt=n=>n.toLocaleString("fr-FR").replace(/\u202f|\u00a0/g," ");
+function render(){
+ document.querySelectorAll("[data-p]").forEach(e=>e.textContent=fmt(PRICES[level][+e.dataset.p]));
+ document.querySelectorAll("#tabs button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.l===level));
+ document.querySelectorAll("[data-wa]").forEach(a=>{
+  let m=a.dataset.wa;
+  if(a.dataset.t){const i=["Essentiel","Réussite","Premium"].indexOf(a.dataset.t);m="Bonjour JNTHN Digital, je veux le pack "+a.dataset.t+" pour le "+level+" ("+fmt(PRICES[level][i])+" FCFA).";}
+  a.href="https://wa.me/"+WA_NUMBER+"?text="+encodeURIComponent(m||"Bonjour JNTHN Digital");a.target="_blank";a.rel="noopener";});
+}
+document.getElementById("tabs").addEventListener("click",e=>{const b=e.target.closest("button");if(b){level=b.dataset.l;render()}});
+render();
+// Ajoute ici de VRAIS témoignages (avec accord) : {t:"texte", a:"Prénom, examen, pays"}
+const TESTIMONIALS=[];
+if(TESTIMONIALS.length){const el=document.getElementById("testi");el.innerHTML=TESTIMONIALS.map(x=>'<blockquote>“'+x.t+'”<cite>'+x.a+'</cite></blockquote>').join("");}
+</script>
+</body></html>
